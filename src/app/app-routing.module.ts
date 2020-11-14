@@ -21,7 +21,11 @@ const routes: Routes = [
   },
   {
     path: 'luminosidade',
-    loadChildren: () => import('./pages/luminosidade/luminosidade.module').then( m => m.LuminosidadePageModule)
+    loadChildren: () => import('./pages/luminosidade/luminosidade.module').then(m => m.LuminosidadePageModule)
+  },
+  {
+    path: 'umidade',
+    loadChildren: () => import('./pages/umidade/umidade.module').then(m => m.UmidadePageModule)
   }
 ];
 
