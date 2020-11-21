@@ -42,7 +42,19 @@ export class DweetService {
     console.log(data);
     for (let _with of data.with) {
       let content: Content;
-      content = new Content(_with.content.temperatura, _with.content.luminosidade, _with.content.umidade);
+      content = new Content(
+        _with.content.temperatura,
+        _with.content.luminosidade,
+        _with.content.umidade,
+        _with.content.current_color,
+        _with.content.status_buzzer,
+        _with.content.maxTemp,
+        _with.content.minTemp,
+        _with.content.maxLum,
+        _with.content.minLum,
+        _with.content.maxUmid,
+        _with.content.minUmid,
+      );
       _date = this.formatDate(_with.created);
       _time = this.formatTime(_with.created);
       let tempWith: With;

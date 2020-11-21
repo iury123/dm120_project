@@ -29,6 +29,9 @@
         <ion-icon name="time" color="secondary"></ion-icon>
         {{dweet._with[0].time}}
       </p>
+      <p>
+        Max: {{dweet._with[0]._content.maxUmid}} % / Min : {{dweet._with[0]._content.minUmid}} %
+      </p>
     </div>
     <chart [options]="options" style="display: block;" type="chart"></chart>
   </div>

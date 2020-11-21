@@ -39,6 +39,7 @@ export class TemperaturePage implements OnInit {
     this.dweet = this.dweetService.preencherDweet(data);
     this.loadDataForPlot(this.dweet)
     this.plotChart();
+    console.log(this.dweet);
   }
 
   private loadDataForPlot(dweet: Dweet) {
