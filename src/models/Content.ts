@@ -4,7 +4,7 @@ export default class Content {
     private luminosidade: string = "0";
     private umidade: string = "0";
     private current_color: string = "0";
-    private status_buzzer: string = "0";
+    private status_buzzer: boolean = false;
     private tempMax: string = "0";
     private tempMin: string = "0";
     private lumMax: string = "0";
@@ -18,7 +18,7 @@ export default class Content {
         luminosidade: string,
         umidade: string,
         current_color: string,
-        status_buzzer: string,
+        status_buzzer: boolean,
         tempMax: string,
         tempMin: string,
         lumMax: string,
@@ -49,9 +49,9 @@ export default class Content {
 
     /**
      * Getter $status_buzzer
-     * @return {string }
+     * @return {boolean }
      */
-    public get $status_buzzer(): string {
+    public get $status_buzzer(): boolean {
         return this.status_buzzer;
     }
 
@@ -113,9 +113,9 @@ export default class Content {
 
     /**
      * Setter $status_buzzer
-     * @param {string } value
+     * @param {boolean } value
      */
-    public set $status_buzzer(value: string) {
+    public set $status_buzzer(value: boolean) {
         this.status_buzzer = value;
     }
 

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { DweetService } from 'src/app/services/dweet.service';
 import Dweet from 'src/models/Dweet';
@@ -8,7 +8,7 @@ import Dweet from 'src/models/Dweet';
   templateUrl: './temperature.page.html',
   styleUrls: ['./temperature.page.scss'],
 })
-export class TemperaturePage implements OnInit {
+export class TemperaturePage implements OnInit, OnDestroy {
 
   private dweet: Dweet
   private isLoading: boolean = true;

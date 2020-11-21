@@ -33,4 +33,12 @@
     </ion-card>
   </p>
 
+  <div class="led-buzzer">
+    <div style="display: flex;">
+      <div class="led-color" [style.background-color]="ledColor"></div>
+      <label>LED</label>
+    </div>
+    <div>Buzzer {{  buzzerStatus ?  'Ligado' : 'Desligado'  }}</div>
+  </div>
+
 </ion-content>
