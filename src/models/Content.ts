@@ -5,12 +5,12 @@ export default class Content {
     private umidade: string = "0";
     private current_color: string = "0";
     private status_buzzer: string = "0";
-    private maxTemp: string = "0";
-    private minTemp: string = "0";
-    private maxLum: string = "0";
-    private minLum: string = "0";
-    private maxUmid: string = "0";
-    private minUmid: string = "0";
+    private tempMax: string = "0";
+    private tempMin: string = "0";
+    private lumMax: string = "0";
+    private lumMin: string = "0";
+    private umidMax: string = "0";
+    private umidMin: string = "0";
 
 
     constructor(
@@ -19,21 +19,21 @@ export default class Content {
         umidade: string,
         current_color: string,
         status_buzzer: string,
-        maxTemp: string,
-        minTemp: string,
-        maxLum: string,
-        minLum: string,
-        maxUmid: string,
-        minUmid: string) {
+        tempMax: string,
+        tempMin: string,
+        lumMax: string,
+        lumMin: string,
+        umidMax: string,
+        umidMin: string) {
         this.temperatura = temperatura;
         this.luminosidade = luminosidade;
         this.umidade = umidade;
-        this.maxTemp = maxTemp;
-        this.maxLum = maxLum;
-        this.maxUmid = maxUmid;
-        this.minTemp = minTemp;
-        this.minLum = minLum;
-        this.minUmid = minUmid;
+        this.tempMax = tempMax;
+        this.lumMax = lumMax;
+        this.umidMax = umidMax;
+        this.tempMin = tempMin;
+        this.lumMin = lumMin;
+        this.umidMin = umidMin;
         this.current_color = current_color;
         this.status_buzzer = status_buzzer;
     }
@@ -56,51 +56,51 @@ export default class Content {
     }
 
     /**
-     * Getter $maxTemp
+     * Getter $tempMax
      * @return {string }
      */
-    public get $maxTemp(): string {
-        return this.maxTemp;
+    public get $tempMax(): string {
+        return this.tempMax;
     }
 
     /**
-     * Getter $minTemp
+     * Getter $tempMin
      * @return {string }
      */
-    public get $minTemp(): string {
-        return this.minTemp;
+    public get $tempMin(): string {
+        return this.tempMin;
     }
 
     /**
-     * Getter $maxLum
+     * Getter $lumMax
      * @return {string }
      */
-    public get $maxLum(): string {
-        return this.maxLum;
+    public get $lumMax(): string {
+        return this.lumMax;
     }
 
     /**
-     * Getter $minLum
+     * Getter $lumMin
      * @return {string }
      */
-    public get $minLum(): string {
-        return this.minLum;
+    public get $lumMin(): string {
+        return this.lumMin;
     }
 
     /**
-     * Getter $maxUmid
+     * Getter $umidMax
      * @return {string }
      */
-    public get $maxUmid(): string {
-        return this.maxUmid;
+    public get $umidMax(): string {
+        return this.umidMax;
     }
 
     /**
-     * Getter $minUmid
+     * Getter $umidMin
      * @return {string }
      */
-    public get $minUmid(): string {
-        return this.minUmid;
+    public get $umidMin(): string {
+        return this.umidMin;
     }
 
     /**
@@ -120,51 +120,51 @@ export default class Content {
     }
 
     /**
-     * Setter $maxTemp
+     * Setter $tempMax
      * @param {string } value
      */
-    public set $maxTemp(value: string) {
-        this.maxTemp = value;
+    public set $tempMax(value: string) {
+        this.tempMax = value;
     }
 
     /**
-     * Setter $minTemp
+     * Setter $tempMin
      * @param {string } value
      */
-    public set $minTemp(value: string) {
-        this.minTemp = value;
+    public set $tempMin(value: string) {
+        this.tempMin = value;
     }
 
     /**
-     * Setter $maxLum
+     * Setter $lumMax
      * @param {string } value
      */
-    public set $maxLum(value: string) {
-        this.maxLum = value;
+    public set $lumMax(value: string) {
+        this.lumMax = value;
     }
 
     /**
-     * Setter $minLum
+     * Setter $lumMin
      * @param {string } value
      */
-    public set $minLum(value: string) {
-        this.minLum = value;
+    public set $lumMin(value: string) {
+        this.lumMin = value;
     }
 
     /**
-     * Setter $maxUmid
+     * Setter $umidMax
      * @param {string } value
      */
-    public set $maxUmid(value: string) {
-        this.maxUmid = value;
+    public set $umidMax(value: string) {
+        this.umidMax = value;
     }
 
     /**
-     * Setter $minUmid
+     * Setter $umidMin
      * @param {string } value
      */
-    public set $minUmid(value: string) {
-        this.minUmid = value;
+    public set $umidMin(value: string) {
+        this.umidMin = value;
     }
 
 

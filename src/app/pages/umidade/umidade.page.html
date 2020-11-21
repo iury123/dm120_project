@@ -30,11 +30,10 @@
         {{dweet._with[0].time}}
       </p>
       <p>
-        Max: {{dweet._with[0]._content.maxUmid}} % / Min : {{dweet._with[0]._content.minUmid}} %
+        Max: {{dweet._with[0]._content.umidMax}} % / Min : {{dweet._with[0]._content.umidMin}} %
       </p>
     </div>
     <chart [options]="options" style="display: block;" type="chart"></chart>
   </div>
-
 
 </ion-content>

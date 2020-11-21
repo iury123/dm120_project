@@ -48,12 +48,12 @@ export class DweetService {
         _with.content.umidade,
         _with.content.current_color,
         _with.content.status_buzzer,
-        _with.content.maxTemp,
-        _with.content.minTemp,
-        _with.content.maxLum,
-        _with.content.minLum,
-        _with.content.maxUmid,
-        _with.content.minUmid,
+        _with.content.tempMax,
+        _with.content.tempMin,
+        _with.content.lumMax,
+        _with.content.lumMin,
+        _with.content.umidMax,
+        _with.content.umidMin,
       );
       _date = this.formatDate(_with.created);
       _time = this.formatTime(_with.created);
